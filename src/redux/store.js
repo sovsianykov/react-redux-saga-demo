@@ -1,11 +1,9 @@
-import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
-import apiReducer from './apiReducer'
-
+import { createStore, combineReducers, applyMiddleware, compose } from "redux";
+import apiReducer from "./apiReducer";
 
 const reducers = combineReducers({
-    api : apiReducer
-
-    }) ;
+  api: apiReducer,
+});
 
 const store = createStore(reducers);
 
